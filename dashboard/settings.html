@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings</title>
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- fontawesome library -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <!-- my farmwork -->
+    <link rel="stylesheet" href="./css/framwork.css">
+    <!--main css file  -->
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <!-- start sidebar -->
+<div class="page">
+    <div class="side-bar">
+        <h3>alhamwi</h3>
+        <ul>
+            <li >
+                <a href="index.html">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <span>dashboard</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span>settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <span>profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span>projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span>courses</span>
+                </a>
+            </li>
+            <li>               
+                <a href="">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span>friends</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-regular fa-file fa-fw"></i>
+                    <span>files</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <span>plans</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end sidebar -->
+    <div class="content-area">
+        <!-- start content area head -->
+        <div class="head">
+            <form action="">
+                <input type="search" placeholder="type a keyword" class="search">
+            </form>
+            <div class="head-image">
+                <span class="notifactions">
+                    <i class="fa-regular fa-bell fa-lg"></i>
+                </span>
+                <img src="./images/profile.jpg" alt="">
+            </div>
+        </div>
+        <!-- end content area head -->
+        <!-- start content h1 -->
+        <div class="main-h1">
+            <h1>settings</h1>
+        </div>
+        <!-- end content h1 -->
+        <!-- start setting page -->
+        <div class="setting-page d-grid">
+            <div class="site-control main-box">
+                <h3 class="h-setting">sit control</h3>
+                <p class="p-setting">control the website if there is maintenance</p>
+                <form action="">
+                    <div class="text">
+                        <h4>webside control</h4>
+                        <p class="p-setting">Open/close website and type reason</p>
+                    </div>
+                    <div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox" checked  name="" id="" > 
+                            <div class="toggle-switch"></div>        
+                        </label>
+                    </div>
+                </form>
+                <textarea  placeholder="Close message contant" name="" id=""></textarea>
+            </div>
+            <div class="general-info main-box">
+                <h3 class="h-setting">general info</h3>
+                <p class="p-setting">general information about your account</p>
+                <form action="">
+                    <label for="">
+                        <p id="first-name" class="p-setting">first name</p>
+                        <input placeholder="First name" class="full-width" type="text">
+                    </label>
+                    <label for="">
+                        <p class="p-setting">last name</p>
+                        <input placeholder="Last name" id="last-name"  class="full-width" type="text">
+                    </label>
+                    <label for="">
+                        <p id="email" class="p-setting">email</p>
+                        <div class="changable-email">
+                            <input placeholder="Email"  class="full-width" type="email" disabled value="0@nn.sa">
+                            <a class="button" href="">change</a>
+                        </div>
+                    </label>
+                </form>
+            </div>
+            <div class="security-info main-box">
+                <h3 class="h-setting">Security Info</h3>
+                <p class="p-setting">Security Information About Your Account</p>
+                <div class="box d-flex space-between align-center margin-bottom">
+                    <div class="text">
+                        <span>Password</span>
+                        <p class="p-setting">Last Change On 25/10/2021</p>
+                    </div>
+                    <a class="button" href="">change</a>
+                </div>
+                <div class="box d-flex space-between align-center margin-bottom">
+                    <div class="text ">
+                        <span>Two-Factor Authentication</span>
+                        <p class="p-setting">Enable/Disable The Feature</p>
+                    </div>
+                    <label>
+                        <input class="toggle-checkbox" type="checkbox" name="" id="" > 
+                        <div class="toggle-switch"></div>        
+                    </label>
+                </div>
+                <div class="box d-flex space-between  align-center">
+                    <div class="text">
+                        <span>Devices</span>
+                        <p class="p-setting">Check The Login Devices List</p>
+                    </div>
+                    <a class="button" href="">devices</a>
+                </div>
+            </div>
+            <div class="social-info main-box">
+                <h3 class="h-setting">Social Info</h3>
+                <p class="p-setting">Social Media Information</p>
+                <div class="boxes">
+                    <div class="box d-flex align-center ">
+                        <i class="fa-brands fa-twitter center-flex c-grey"></i>
+                        <input type="text" placeholder="Type twitter username">
+                    </div>
+                    <div class="box d-flex align-center">
+                        <i class="fa-brands fa-facebook-f center-flex c-grey"></i>
+                        <input type="text" placeholder="Type facebook username">
+                    </div>
+                    <div class="box d-flex align-center">
+                        <i class="fa-brands fa-linkedin center-flex c-grey"></i>
+                        <input type="text" placeholder="Type linkedin username">
+                    </div>
+                    <div class="box d-flex align-center">
+                        <i class="fa-brands fa-youtube center-flex c-grey"></i>
+                        <input type="text" placeholder="Type facebook username">
+                    </div>
+                </div>
+            </div>
+            <div class="widgets-control main-box">
+                <h3 class="h-setting">widgets control</h3>
+                <p class="p-setting">Show/Hide Widgets</p>
+                <form action="">
+                    <label class="d-flex" for="">
+                        <input type="checkbox" checked>
+                        <p>Quick Draft</p>
+                    </label>
+                    <label class="d-flex" for="">
+                        <input type="checkbox" checked>
+                        <p>Yearly Targets</p>
+                    </label>
+                    <label class="d-flex" for="">
+                        <input type="checkbox">
+                        <p >Tickets Statistics</p>
+                    </label>
+                    <label class="d-flex" for="">
+                        <input type="checkbox">
+                        <p >Latest News</p>
+                    </label>
+                    <label class="d-flex" for="">
+                        <input type="checkbox" checked>
+                        <p >Latest Tasks</p>
+                    </label>
+                    <label class="d-flex" for="">
+                        <input type="checkbox" checked>
+                        <p >Top Search Items</p>
+                    </label>
+                </form>
+            </div>
+            <div class="backup-manager main-box">
+                <h3 class="h-setting">Backup Manager</h3>
+                <p class="p-setting">Control Backup Time And Location</p>
+                <label>
+                    <input class="check" type="checkbox" name="" id="">
+                    <div class="castom-check"></div>
+                </label>
+            </div>
+        </div>
+        <!-- end setting page -->
+    </div>
+</div>
+</body>
+</html>
