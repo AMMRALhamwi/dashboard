@@ -4,6 +4,9 @@ const letters = "qwertyuiopasdfghjklzxcvbnm";
 let lettersArray = Array.from(letters);
 // console.log(arrayLetters);
 
+// winning counter
+let win = 0;
+
 // select letters container
 
 let lettersContainer = document.querySelector(".letters");
@@ -588,6 +591,7 @@ document.addEventListener("click", (e) => {
           if (WordIndex === spanIndex) {
             span.innerHTML = theClickedLetter;
             span.classList.add("correct");
+            win++;
           }
         });
       }
@@ -611,21 +615,25 @@ document.addEventListener("click", (e) => {
       // play success sound
       document.getElementById("success").play();
     }
+    if (win == guessSpans.length) {
+      winGame();
+    }
   }
 });
 
 // winning the game
-console.log(typeof guessSpans);
-// Check if all elements in the array have the class name "correct"
-let allHaveCorrectClass = guessSpans.every((element) =>
-  element.classList.contains("correct")
-);
+function winGame() {
+  // create popup div
+  let div = document.createElement("div");
+  // create text
+  let divText = document.createTextNode(`Awesome You Won `);
+  // append text to div
+  div.appendChild(divText);
+  // add class to div
+  div.className = "win-popup";
 
-// Output the result
-if (allHaveCorrectClass) {
-  console.log("All elements have the class name 'correct'");
-} else {
-  console.log("Not all elements have the class name 'correct'");
+  // append body
+  document.body.appendChild(div);
 }
 // end game function
 function endGame() {
@@ -638,7 +646,7 @@ function endGame() {
   // append text to div
   div.appendChild(divText);
   // add class to div
-  div.className = "popup";
+  div.className = "lose-popup";
 
   // append body
   document.body.appendChild(div);
