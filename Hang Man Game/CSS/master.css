@@ -70,7 +70,7 @@ hr {
   position: relative;
   margin: auto;
   left: -60px;
-  display: block;
+  display: none;
 }
 .hangman-draw .the-stand {
   content: "";
