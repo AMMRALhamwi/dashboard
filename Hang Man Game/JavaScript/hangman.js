@@ -1,4 +1,3 @@
-console.log("from the main js file");
 // Letters
 const letters = "qwertyuiopasdfghjklzxcvbnm";
 // get array from letters
@@ -8,7 +7,6 @@ let lettersArray = Array.from(letters);
 // select letters container
 
 let lettersContainer = document.querySelector(".letters");
-console.log(lettersContainer);
 
 // genrate letters
 lettersArray.forEach((letter) => {
@@ -107,6 +105,7 @@ document.addEventListener("click", (e) => {
         guessSpans.forEach((span, spanIndex) => {
           if (WordIndex === spanIndex) {
             span.innerHTML = theClickedLetter;
+            span.classList.add("correct");
           }
         });
       }
@@ -132,6 +131,19 @@ document.addEventListener("click", (e) => {
     }
   }
 });
+
+// winning the game
+
+// Function to check if all elements have the class name "correct"
+function allElementsHaveCorrectClass(elements) {
+  return elements.every((element) => element.classList.contains("correct"));
+}
+// Check if all elements in the array have the class name "correct"
+if (allElementsHaveCorrectClass(elementsArray)) {
+  console.log("All elements have the class name 'correct'");
+} else {
+  console.log("Not all elements have the class name 'correct'");
+}
 // end game function
 function endGame() {
   // create popup div

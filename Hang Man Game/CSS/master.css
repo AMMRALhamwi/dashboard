@@ -4,12 +4,40 @@
 body {
   font-family: Tahoma, Arial;
 }
-.container {
+/* .container {
   margin: 20px auto;
   width: 1000px;
+} */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 .row {
   display: flex;
+  flex-direction: column;
 }
 hr {
   border: 1px solid #eee;
@@ -42,7 +70,7 @@ hr {
   position: relative;
   margin: auto;
   left: -60px;
-  display: none;
+  display: block;
 }
 .hangman-draw .the-stand {
   content: "";
@@ -205,6 +233,13 @@ hr {
   flex: 1;
   padding: 15px;
   text-align: center;
+}
+
+/* Small */
+@media (max-width: 768px) {
+  .letters {
+    padding: 0px;
+  }
 }
 .letters.finished {
   pointer-events: none;
