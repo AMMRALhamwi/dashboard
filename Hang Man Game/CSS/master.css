@@ -3,17 +3,18 @@
 }
 body {
   font-family: Tahoma, Arial;
+  background-image: url(../vector-gallows-in-the-public-square.jpg);
+  background-size: cover;
 }
 .page {
   height: 100vh;
-  background-image: url();
 }
 .page::before {
   position: fixed;
   content: "";
   width: 300%;
   height: 100%;
-  background-color: #0075ff;
+  background-color: #0075ff38;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) skew(0, -10deg);
