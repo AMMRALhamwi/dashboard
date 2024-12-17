@@ -1,3 +1,10 @@
+// welcome popup
+let welcomePopup = document.querySelector(".welcome-popup");
+let enterGameButton = document.querySelector(".welcome-popup .enter-game");
+
+enterGameButton.onclick = function () {
+  welcomePopup.style.display = "none";
+};
 // Letters
 const letters = "qwertyuiopasdfghjklzxcvbnm";
 // get array from letters

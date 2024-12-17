@@ -95,6 +95,69 @@ hr {
   color: #e91e63;
   font-weight: bold;
 }
+
+/* welcome popup */
+.welcome-popup {
+  background-color: #f44336;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+@media (max-width: 768px) {
+  .welcome-popup {
+    top: 1%;
+    line-height: 1.4;
+    width: 90%;
+  }
+}
+
+.welcome-popup img {
+  position: relative;
+  top: 15px;
+  border-radius: 30px;
+}
+.welcome-popup p {
+  line-height: 1.8;
+}
+@media (max-width: 768px) {
+  .welcome-popup img {
+    position: relative;
+    top: 5px;
+    border-radius: 30px;
+  }
+  .welcome-popup h2 {
+    margin: 0;
+  }
+  .welcome-popup h3 {
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+}
+
+.welcome-popup .enter-game {
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  outline: red 4px solid;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* end welcome popup */
+
 .hangman-draw {
   flex: 1;
   background-color: #f8f8f8;
