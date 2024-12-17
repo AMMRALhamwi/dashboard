@@ -100,6 +100,7 @@ hr {
   background-color: #f8f8f8;
   padding: 20px;
   height: 324px;
+  border-radius: 12px;
 }
 .hangman-draw .the-draw {
   width: 60px;
@@ -467,6 +468,11 @@ hr {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 /* Small */
 @media (max-width: 768px) {
@@ -486,13 +492,13 @@ hr {
   display: flex;
   justify-content: center;
   min-height: 104px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
-/* Small */
-@media (max-width: 768px) {
-  .letters-guess {
-    padding: 0px;
-  }
-}
+
 .letters-guess span {
   width: 60px;
   height: 60px;
