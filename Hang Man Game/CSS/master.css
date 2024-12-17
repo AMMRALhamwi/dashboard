@@ -4,11 +4,48 @@
 body {
   font-family: Tahoma, Arial;
 }
-/* .container {
-  margin: 20px auto;
-  width: 1000px;
-} */
-
+.page {
+  height: 100vh;
+  background-image: url();
+}
+.page::before {
+  position: fixed;
+  content: "";
+  width: 300%;
+  height: 100%;
+  background-color: #0075ff;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) skew(0, -10deg);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: -1;
+  -webkit-transform: translateX(-50%) skew(0, -10deg);
+  -moz-transform: translateX(-50%) skew(0, -10deg);
+  -ms-transform: translateX(-50%) skew(0, -10deg);
+  -o-transform: translateX(-50%) skew(0, -10deg);
+  animation: waving 10s ease-in-out infinite alternate;
+  -webkit-animation: waving 5s ease-in-out infinite alternate;
+}
+@keyframes waving {
+  from {
+    transform: translateX(-50%) skew(0, -20deg);
+    -webkit-transform: translateX(-50%) skew(0, -20deg);
+    -moz-transform: translateX(-50%) skew(0, -20deg);
+    -ms-transform: translateX(-50%) skew(0, -20deg);
+    -o-transform: translateX(-50%) skew(0, -20deg);
+  }
+  to {
+    transform: translateX(-30%) skew(10deg, 0deg);
+    -webkit-transform: translateX(-30%) skew(10deg, 0deg);
+    -moz-transform: translateX(-30%) skew(10deg, 0deg);
+    -ms-transform: translateX(-30%) skew(10deg, 0deg);
+    -o-transform: translateX(-30%) skew(10deg, 0deg);
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
