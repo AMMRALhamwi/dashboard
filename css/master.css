@@ -572,6 +572,77 @@ ul {
   font-size: 16px;
 }
 /* end yearly targets */
+/* welcome popup */
+.hangman {
+  position: relative;
+}
+.welcome-popup {
+  background-color: #f443361c;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  /* position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%); */
+  text-align: center;
+  /* padding: 20px 30px; */
+}
+
+@media (max-width: 768px) {
+  .welcome-popup {
+    top: 1%;
+    line-height: 1.4;
+    width: 90%;
+  }
+}
+/* .welcome-popup .image {
+  display: flex;
+  align-items: center;
+} */
+.welcome-popup img {
+  border-radius: 30px;
+  position: absolute;
+  top: 0px;
+  width: 100px;
+  right: 0px;
+  border-radius: 30px;
+}
+.welcome-popup .text {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.welcome-popup p {
+  line-height: 1.8;
+  line-height: 1.8;
+  /* padding: 20px; */
+}
+@media (max-width: 768px) {
+  .welcome-popup img {
+    top: 5px;
+    right: 25px;
+  }
+}
+
+.hangman .enter-game {
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  outline: red 4px solid;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+.hangman .enter-game a {
+  color: red;
+}
+/* end welcome popup */
 /* start tickets statistics */
 .statistics .stat-boxes-holder {
   flex-wrap: wrap;
