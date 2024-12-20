@@ -595,7 +595,7 @@ ul {
   .welcome-popup {
     top: 1%;
     line-height: 1.4;
-    width: 90%;
+    /* width: 90%; */
   }
 }
 /* .welcome-popup .image {
