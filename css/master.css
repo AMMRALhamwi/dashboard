@@ -648,6 +648,7 @@ ul {
   flex-wrap: wrap;
   text-align: center;
   gap: 40px;
+  justify-content: center;
 }
 .statistics .box {
   flex-basis: calc(50% - 40px);

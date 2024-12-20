@@ -10,6 +10,11 @@ body {
   background-color: #f8f8f8;
   padding: 15px;
 }
+@media (max-width: 768px) {
+  .quiz-app {
+    width: 352px;
+  }
+}
 .quiz-app .quiz-info {
   display: flex;
   background-color: #fff;
@@ -81,9 +86,19 @@ body {
   display: flex;
   padding: 20px;
 }
+
 .quiz-app .bullets .spans {
   flex: 1;
   display: flex;
+}
+@media (max-width: 768px) {
+  .quiz-app .bullets {
+    flex-wrap: wrap;
+  }
+  .quiz-app .bullets .spans {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 }
 .quiz-app .bullets span {
   width: 20px;

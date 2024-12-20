@@ -47,7 +47,7 @@ function getQuestions() {
 
         //start countDown
         clearInterval(countDownInterval);
-        countDown(6, questionsCount);
+        countDown(180, questionsCount);
 
         // show resulets
         showresults(questionsCount);
@@ -79,7 +79,7 @@ function addQusstionData(questionsObject, questionsCount) {
   if (currentIndex < questionsCount) {
     let questionTille = document.createElement("h2");
     // create question text
-    let questionText = document.createTextNode(questionsObject.tittle);
+    let questionText = document.createTextNode(questionsObject.title);
     //   append text to hedding
     questionTille.appendChild(questionText);
     //   append heading to quiz area
