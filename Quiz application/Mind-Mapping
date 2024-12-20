@@ -1,0 +1,20 @@
+1 : create json object which have all the questions
+2 : start creating html
+3 : add dummy data
+4 : start creating css styling
+5 : fetch number of questions from json object
+6 : show questions count and questions category
+7 : shoe number of bullets depening on the questions count
+8 : set the number for the right and wrong answers
+9 : creat count down timer
+10 : fetch the questions from the json object
+11 : show first question
+12 : check for the answer
+13 : if the contdown timer is over , mark the question as wrong and show the next
+14 : add class on bullet after after answering the question
+15 : when the questions are over show results
+
+Ideas :
+1 : you could many json object and choose out of the languages for example
+2 : Add many questions and choose ten randomly
+3 : randomaize for answers( )

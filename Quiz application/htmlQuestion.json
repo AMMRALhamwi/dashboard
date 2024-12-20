@@ -1,0 +1,26 @@
+[
+  {
+    "tittle": "Why the sky is blue ?",
+    "answer_1": "To make text bold",
+    "answer_2": "To make the ex joules",
+    "answer_3": "To Add horizantlal line",
+    "answer_4": "Because blue is the warmest color",
+    "right_answer": "Because blue is the warmest color"
+  },
+  {
+    "tittle": "Why do you love me",
+    "answer_1": "because i'm rich",
+    "answer_2": "because i'm hansome",
+    "answer_3": "To Add a frind",
+    "answer_4": "Because im the best",
+    "right_answer": "Because im the best"
+  },
+  {
+    "tittle": "Why the sky is not blue",
+    "answer_1": "not To make text bold",
+    "answer_2": "not To make the ex joules",
+    "answer_3": "not To Add horizantlal line",
+    "answer_4": "not Because blue is the warmest color",
+    "right_answer": "not Because blue is the warmest color"
+  }
+]
