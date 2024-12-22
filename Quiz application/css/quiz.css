@@ -91,9 +91,7 @@ body {
   }
 }
 /* end of moving background */
-.page {
-  margin: auto;
-}
+
 .quiz-app {
   margin: auto;
   width: 800px;
@@ -103,8 +101,8 @@ body {
 }
 @media (max-width: 768px) {
   .quiz-app {
-    width: 360px;
-    margin: 0px;
+    width: 400px;
+    /* margin: 0px; */
     height: 100vb;
   }
 }
