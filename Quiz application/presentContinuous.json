@@ -1,0 +1,114 @@
+[
+  {
+    "title": "She _______ (go) to the gym at the moment.",
+    "answer_1": "goes",
+    "answer_2": "is going",
+    "answer_3": "go",
+    "answer_4": "gone",
+    "right_answer": "is going"
+  },
+  {
+    "title": "I'm sorry, I can't talk right now. I _______ (drive) my car.",
+    "answer_1": "drive",
+    "answer_2": "driving",
+    "answer_3": "am driving",
+    "answer_4": "driven",
+    "right_answer": "am driving"
+  },
+  {
+    "title": "Look! It _______ (rain) outside.",
+    "answer_1": "rains",
+    "answer_2": "is raining",
+    "answer_3": "raining",
+    "answer_4": "rainy",
+    "right_answer": "is raining"
+  },
+  {
+    "title": "She _______ (study) for her exam this evening.",
+    "answer_1": "studies",
+    "answer_2": "study",
+    "answer_3": "is studying",
+    "answer_4": "studied",
+    "right_answer": "is studying"
+  },
+  {
+    "title": "They _______ (have) a meeting right now.",
+    "answer_1": "are having",
+    "answer_2": "have",
+    "answer_3": "having",
+    "answer_4": "had",
+    "right_answer": "are having"
+  },
+  {
+    "title": "I can't talk to you now because I _______ (work) on an important project.",
+    "answer_1": "worked",
+    "answer_2": "working",
+    "answer_3": "work",
+    "answer_4": "am working",
+    "right_answer": "am working"
+  },
+  {
+    "title": "The children _______ (play) in the garden at the moment.",
+    "answer_1": "plays",
+    "answer_2": "are playing",
+    "answer_3": "playing",
+    "answer_4": "played",
+    "right_answer": "are playing"
+  },
+  {
+    "title": "He usually _______ (read) a book, but today he _______ (watch) a movie.",
+    "answer_1": "reads / is watching",
+    "answer_2": "is reading / watches",
+    "answer_3": "read / watching",
+    "answer_4": "reading / is watching",
+    "right_answer": "reads / is watching"
+  },
+  {
+    "title": "She _______ (talk) on the phone with her friend at the moment.",
+    "answer_1": "talks",
+    "answer_2": "is talking",
+    "answer_3": "talked",
+    "answer_4": "talk",
+    "right_answer": "is talking"
+  },
+  {
+    "title": "We _______ (have) lunch right now.",
+    "answer_1": "are having",
+    "answer_2": "having",
+    "answer_3": "have",
+    "answer_4": "having",
+    "right_answer": "are having"
+  },
+  {
+    "title": "What _______ you _______ (do) this weekend?",
+    "answer_1": "are / do",
+    "answer_2": "do / doing",
+    "answer_3": "doing / are",
+    "answer_4": "are / doing",
+    "right_answer": "are / doing"
+  },
+  {
+    "title": "It _______ (snow) at the moment.",
+    "answer_1": "snows",
+    "answer_2": "snowing",
+    "answer_3": "snow",
+    "answer_4": "is snowing",
+    "right_answer": "is snowing"
+  },
+  {
+    "title": "Why _______ she _______ (cry)?",
+    "answer_1": "does / cry",
+    "answer_2": "is / cry",
+    "answer_3": "do / crying",
+    "answer_4": "is / crying",
+    "right_answer": "is / crying"
+  },
+  {
+    "title": "He _______ (not, play) video games now. He's working on his project.",
+    "answer_1": "does play",
+    "answer_2": "doesn't play",
+    "answer_3": "not playing",
+    "answer_4": "isn't playing",
+    "right_answer": "isn't playing"
+  }
+]

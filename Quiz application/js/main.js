@@ -1,3 +1,12 @@
+// select the selection buttons
+// let selectionButtonsContainer = document.querySelector(".selection-buttons");
+// let englishSimplePresent = document.getElementById("simplePresent");
+// let englishPresentContinuous = document.getElementById("presentContinuous");
+
+// englishSimplePresent.onclick = function () {
+//   selectionButtonsContainer.style.display = "none";
+
+// };
 // select the elements
 let countSpan = document.querySelector(".quiz-app .quiz-info .count span");
 let bulletSpanContainer = document.querySelector(".quiz-app .bullets .spans");
@@ -9,6 +18,8 @@ let resuletsContainer = document.querySelector(".quiz-app .results");
 let countdownElement = document.querySelector(".quiz-app .bullets .countdown");
 
 // set options
+let simplePresent = "simplePresent.json";
+let presentContinuous = "presentContinuous.json";
 let currentIndex = 0;
 let rightAnswers = 0;
 let countDownInterval;
@@ -29,32 +40,38 @@ function getQuestions() {
       countDown(180, questionsCount);
 
       //click on submit button
+      let clicked = 0;
+
       submitButton.onclick = function () {
-        // getting the right answer
-        let rightAnswer = questionsObject[currentIndex].right_answer;
-        // bucause the user chose an answer increase the index
-        currentIndex++;
-        // check the answer
-        checkanswer(rightAnswer, questionsCount);
-        // delete the previous data
-        quizArea.innerHTML = "";
-        answersArea.innerHTML = "";
-        // add next question data
-        addQusstionData(questionsObject[currentIndex], questionsCount);
-
-        // handle bullets class
-        handleBullets();
-
-        //start countDown
-        clearInterval(countDownInterval);
-        countDown(180, questionsCount);
-
-        // show resulets
-        showresults(questionsCount);
+        clicked++;
+        if (clicked % 2 === 0) {
+          submitButton.innerHTML = "Check Answer";
+          // delete the previous data
+          quizArea.innerHTML = "";
+          answersArea.innerHTML = "";
+          // add next question data
+          addQusstionData(questionsObject[currentIndex], questionsCount);
+          // handle bullets class
+          handleBullets();
+          //start countDown
+          clearInterval(countDownInterval);
+          countDown(180, questionsCount);
+          // show resulets
+          showresults(questionsCount);
+        } else {
+          submitButton.innerHTML = "Submit Answer";
+          // getting the right answer
+          let rightAnswer = questionsObject[currentIndex].right_answer;
+          // bucause the user chose an answer increase the index
+          currentIndex++;
+          // check the answer
+          checkanswer(rightAnswer, questionsCount);
+          // show the right and the chosen answer
+        }
       };
     }
   };
-  myRequest.open("Get", "htmlQuestion.json", true);
+  myRequest.open("Get", presentContinuous, true);
   myRequest.send();
 }
 getQuestions();
@@ -101,6 +118,8 @@ function addQusstionData(questionsObject, questionsCount) {
       radioInput.dataset.answer = questionsObject[`answer_${i + 1}`];
 
       let labelAnswer = document.createElement("label");
+      // add answers-label class
+      labelAnswer.className = "answers-label";
       // add for attibute
       labelAnswer.htmlFor = `answer_${i + 1}`;
       // create label text
@@ -121,15 +140,33 @@ function addQusstionData(questionsObject, questionsCount) {
 // check the answer
 function checkanswer(rightAnswer, questionsCount) {
   let answers = document.getElementsByName("question");
+
   let thechosenAnswer;
+  let userAnsewer;
+  let answersLabel = document.querySelectorAll(".answers-label");
   for (let i = 0; i < answers.length; i++) {
     if (answers[i].checked) {
       thechosenAnswer = answers[i].dataset.answer;
+      userAnsewer = answers[i];
     }
   }
   if (rightAnswer === thechosenAnswer) {
     rightAnswers++;
-    console.log("Your answer is correct");
+    for (i = 0; i < answersLabel.length; i++) {
+      if (answersLabel[i].innerHTML == rightAnswer) {
+        answersLabel[i].style.color = "green";
+      }
+    }
+  } else if (rightAnswer !== thechosenAnswer) {
+    for (i = 0; i < answersLabel.length; i++) {
+      if (answersLabel[i].innerHTML != rightAnswer) {
+        answersLabel[i].style.color = "red";
+      } else {
+        answersLabel[i].style.color = "green";
+      }
+    }
+  } else {
+    console.log("no answers");
   }
 }
 

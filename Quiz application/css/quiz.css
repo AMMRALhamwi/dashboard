@@ -3,7 +3,7 @@
 }
 body {
   font-family: Tahoma, Arial;
-  background-color: #777;
+  background-color: #77777763;
   margin: 0;
   padding: 0;
 }
@@ -49,13 +49,57 @@ body {
     }
   }
 }
-
+.page {
+  background-color: #77777763;
+}
+.page::before {
+  position: fixed;
+  content: "";
+  width: 300%;
+  height: 100%;
+  background-color: #0075ff38;
+  left: 25%;
+  top: 75%;
+  transform: translateX(-50%) skew(0, -10deg);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: -1;
+  -webkit-transform: translateX(-50%) skew(0, -10deg);
+  -moz-transform: translateX(-50%) skew(0, -10deg);
+  -ms-transform: translateX(-50%) skew(0, -10deg);
+  -o-transform: translateX(-50%) skew(0, -10deg);
+  animation: waving 10s ease-in-out infinite alternate;
+  -webkit-animation: waving 5s ease-in-out infinite alternate;
+}
+@keyframes waving {
+  from {
+    transform: translateX(-50%) skew(0, -20deg);
+    -webkit-transform: translateX(-50%) skew(0, -20deg);
+    -moz-transform: translateX(-50%) skew(0, -20deg);
+    -ms-transform: translateX(-50%) skew(0, -20deg);
+    -o-transform: translateX(-50%) skew(0, -20deg);
+  }
+  to {
+    transform: translateX(-30%) skew(10deg, 0deg);
+    -webkit-transform: translateX(-30%) skew(10deg, 0deg);
+    -moz-transform: translateX(-30%) skew(10deg, 0deg);
+    -ms-transform: translateX(-30%) skew(10deg, 0deg);
+    -o-transform: translateX(-30%) skew(10deg, 0deg);
+  }
+}
 /* end of moving background */
+.page {
+  margin: auto;
+}
 .quiz-app {
-  margin: 20px auto;
+  margin: auto;
   width: 800px;
   background-color: #f8f8f8;
   padding: 15px;
+  min-height: 100vh;
 }
 @media (max-width: 768px) {
   .quiz-app {
@@ -76,7 +120,28 @@ body {
 .quiz-app .quiz-info .category {
   flex: 1;
 }
-
+.quiz-app .selection-buttons h2 {
+  text-align: center;
+  color: #0075ff;
+  text-transform: uppercase;
+}
+.quiz-app .selection-buttons .select-test {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-app .selection-buttons .select-test button {
+  display: block;
+  border: none;
+  background-color: #2196f3;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
 .quiz-app .quiz-area {
   background-color: #fff;
   padding: 20px;
@@ -119,7 +184,7 @@ body {
 .quiz-app .submit-button {
   background-color: #0075ff;
   display: block;
-  width: 90%;
+  width: 100%;
   padding: 10px 15px;
   border: none;
   color: #fff;

@@ -1,0 +1,122 @@
+[
+  {
+    "title": "What is the simple present tense?",
+    "answer_1": "It represents actions that happen regularly.",
+    "answer_2": "It represents actions that happened in the past.",
+    "answer_3": "It represents actions that will happen in the future.",
+    "answer_4": "It represents actions that happened yesterday.",
+    "right_answer": "It represents actions that happen regularly."
+  },
+  {
+    "title": "She usually _______ (go) to the gym on Mondays.",
+    "answer_1": "go",
+    "answer_2": "goes",
+    "answer_3": "going",
+    "answer_4": "have gone",
+    "right_answer": "goes"
+  },
+  {
+    "title": "I _______ (like) to read books in my free time.",
+    "answer_1": "like",
+    "answer_2": "likes",
+    "answer_3": "liked",
+    "answer_4": "liking",
+    "right_answer": "like"
+  },
+  {
+    "title": "They _______ (play) tennis every Sunday.",
+    "answer_1": "plays",
+    "answer_2": "play",
+    "answer_3": "played",
+    "answer_4": "playing",
+    "right_answer": "play"
+  },
+  {
+    "title": "He _______ (not, eat) meat. He is a vegetarian.",
+    "answer_1": "doesn't eat",
+    "answer_2": "don't eat",
+    "answer_3": "not eat",
+    "answer_4": "not eating",
+    "right_answer": "doesn't eat"
+  },
+  {
+    "title": "What time _______ your English class start?",
+    "answer_1": "start",
+    "answer_2": "starts",
+    "answer_3": "starting",
+    "answer_4": "does",
+    "right_answer": "does"
+  },
+  {
+    "title": "She _______ (work) as a teacher at the local school.",
+    "answer_1": "works",
+    "answer_2": "work",
+    "answer_3": "working",
+    "answer_4": "worked",
+    "right_answer": "works"
+  },
+  {
+    "title": "I _______ (not, drink) coffee in the evening.",
+    "answer_1": "not drink",
+    "answer_2": "not drinking",
+    "answer_3": "don't drink",
+    "answer_4": "doesn't drink",
+    "right_answer": "don't drink"
+  },
+  {
+    "title": "They _______ (live) in London.",
+    "answer_1": "living",
+    "answer_2": "lives",
+    "answer_3": "live",
+    "answer_4": "lived",
+    "right_answer": "live"
+  },
+  {
+    "title": "My mother _______ (cook) dinner every evening.",
+    "answer_1": "cooked",
+    "answer_2": "cooks",
+    "answer_3": "cook",
+    "answer_4": "cooking",
+    "right_answer": "cooks"
+  },
+  {
+    "title": "What _______ you usually _______ (do) on weekends?",
+    "answer_1": "do / do",
+    "answer_2": "does / do",
+    "answer_3": "do / does",
+    "answer_4": "does / does",
+    "right_answer": "do / do"
+  },
+  {
+    "title": "The sun _______ (rise) in the east.",
+    "answer_1": "rises",
+    "answer_2": "rising",
+    "answer_3": "rise",
+    "answer_4": "risen",
+    "right_answer": "rises"
+  },
+  {
+    "title": "We _______ (not, watch) TV in the mornings.",
+    "answer_1": "watched",
+    "answer_2": "watching",
+    "answer_3": "don't watch",
+    "answer_4": "not watch",
+    "right_answer": "don't watch"
+  },
+  {
+    "title": "He _______ (travel) to different countries every year.",
+    "answer_1": "travels",
+    "answer_2": "travelling",
+    "answer_3": "travelled",
+    "answer_4": "travel",
+    "right_answer": "travels"
+  },
+  {
+    "title": "She _______ (speak) English fluently.",
+    "answer_1": "speaks",
+    "answer_2": "speaking",
+    "answer_3": "speak",
+    "answer_4": "spoke",
+    "right_answer": "speaks"
+  }
+]
