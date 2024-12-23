@@ -24,14 +24,14 @@ body {
 }
 .quiz-app {
   position: relative;
-  margin: auto;
+  margin: 0;
   width: 800px;
   padding: 15px;
   min-height: 100vh;
 }
 @media (max-width: 768px) {
   .quiz-app {
-    width: 413px;
+    width: 405px;
     /* margin: 0px; */
     height: 100vb;
   }
@@ -124,6 +124,7 @@ body {
   border-radius: 8px;
 
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .quiz-app .quiz-area h2 {
@@ -139,6 +140,7 @@ body {
 .quiz-app .answers-area {
   background-color: #fff;
   padding: 0 20px 20px;
+  border-radius: 8px;
 }
 .quiz-app .answers-area .answer {
   background-color: #f9f9f9;
