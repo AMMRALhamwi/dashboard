@@ -10,7 +10,9 @@ let selectionList = document.querySelectorAll(
 );
 let englishSimplePresent = document.getElementById("simplePresent");
 let englishPresentContinuous = document.getElementById("presentContinuous");
-// console.log(selectionList.data.json);
+
+// select the selection select options
+let select = document.querySelector(".testing ");
 
 // select the elements
 let quizInfo = document.querySelector(".quiz-app .quiz-info ");
@@ -78,15 +80,22 @@ function getQuestions() {
       };
     }
   };
-  selectionList.forEach((li) => {
-    li.onclick = function () {
-      myRequest.open("Get", li.dataset.json, true);
-      myRequest.send();
-      selectionLinksContainer.style.display = "none";
-      submitButton.style.display = "block";
-      quizInfo.style.display = "flex";
-      category.innerHTML = li.dataset.category;
-    };
+
+  select.addEventListener("change", function () {
+    const selectedOption = this.options[this.selectedIndex];
+    const selectedValue = selectedOption.value;
+    console.log(selectedValue);
+
+    myRequest.open("GET", selectedValue, true);
+    myRequest.send();
+
+    selectionLinksContainer.style.display = "none";
+    submitButton.style.display = "block";
+    quizInfo.style.display = "flex";
+    quizArea.style.display = "block";
+    answersArea.style.display = "block";
+    bullets.style.display = "flex";
+    category.innerHTML = selectedOption.dataset.category; // Use selectedOption here
   });
 }
 

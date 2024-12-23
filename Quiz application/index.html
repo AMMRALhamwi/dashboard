@@ -20,36 +20,44 @@
         <div class="selection-links">
           <h2>Select a test to start</h2>
           <img src="./images/welcome.png" alt="" />
-          <ul class="select-test">
-            <li
+          <select name="select1" class="testing" id="select">
+            <option value="option2">Select here</option>
+
+            <option
               data-category="Simple Present"
               data-json="simplePresent.json"
               id="simplePresent"
+              value="simplePresent.json"
             >
               English Simple Present
-            </li>
-            <li
+            </option>
+            <option
               data-category="Present Continuous"
               data-json="presentContinuous.json"
               id="presentContinuous"
+              value="presentContinuous.json"
             >
               English Present Continuous
-            </li>
-            <li
+            </option>
+
+            <option
               data-category="yes No questions"
               data-json="yesNoquestions.json"
               id="yesNoquestions"
+              value="yesNoquestions.json"
             >
               Yes No questions
-            </li>
-            <li
+            </option>
+
+            <option
               data-category="wh-questions"
               data-json="wh-questions.json"
               id="wh-questions.json"
+              value="wh-questions.json"
             >
               wh-questions
-            </li>
-          </ul>
+            </option>
+          </select>
         </div>
         <div class="answer-questions-areas">
           <div class="quiz-area"></div>
