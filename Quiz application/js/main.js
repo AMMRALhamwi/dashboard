@@ -13,6 +13,7 @@ let englishPresentContinuous = document.getElementById("presentContinuous");
 // console.log(selectionList.data.json);
 
 // select the elements
+let quizInfo = document.querySelector(".quiz-app .quiz-info ");
 let countSpan = document.querySelector(".quiz-app .quiz-info .count span");
 let category = document.querySelector(".quiz-app .quiz-info .category span");
 
@@ -83,6 +84,7 @@ function getQuestions() {
       myRequest.send();
       selectionLinksContainer.style.display = "none";
       submitButton.style.display = "block";
+      quizInfo.style.display = "flex";
       category.innerHTML = li.dataset.category;
     };
   });
