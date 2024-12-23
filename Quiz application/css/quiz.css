@@ -26,12 +26,12 @@ body {
   position: relative;
   margin: 0;
   width: 800px;
-  padding: 15px;
+  padding: 20px;
   min-height: 100vh;
 }
 @media (max-width: 768px) {
   .quiz-app {
-    width: 405px;
+    width: 400px;
     /* margin: 0px; */
     height: 100vb;
   }
