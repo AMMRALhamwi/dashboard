@@ -1,0 +1,82 @@
+[
+  {
+    "title": " She reads books every day. //(Make a question)",
+    "answer_1": "What does she read every day?",
+    "answer_2": "Where does she read every day?",
+    "answer_3": "How does she read every day?",
+    "answer_4": "When does she read every day?",
+    "right_answer": "What does she read every day?"
+  },
+  {
+    "title": "They are playing football now. //(Make a question)",
+    "answer_1": "Where are they playing now?",
+    "answer_2": "What are they playing now?",
+    "answer_3": "Why are they playing now?",
+    "answer_4": "When are they playing now?",
+    "right_answer": "What are they playing now?"
+  },
+  {
+    "title": "He doesn't eat meat. //(Make a question)",
+    "answer_1": "Where does he eat?",
+    "answer_2": "Why doesn't he eat meat?",
+    "answer_3": "What does he eat?",
+    "answer_4": "When does he eat meat?",
+    "right_answer": "Why doesn't he eat meat?"
+  },
+  {
+    "title": "They work in the office. //(Make a question)",
+    "answer_1": "Where do they work?",
+    "answer_2": "What do they work?",
+    "answer_3": "Why do they work?",
+    "answer_4": "When do they work?",
+    "right_answer": "Where do they work?"
+  },
+  {
+    "title": "She is studying for her exam. //(Make a question)",
+    "answer_1": "Where is she studying?",
+    "answer_2": "What is she studying for?",
+    "answer_3": "Why is she studying?",
+    "answer_4": "When is she studying?",
+    "right_answer": "What is she studying for?"
+  },
+  {
+    "title": "He cooks dinner on Sundays. //(Make a question)",
+    "answer_1": "When does he cook dinner?",
+    "answer_2": "What does he cook on Sundays?",
+    "answer_3": "Why does he cook dinner?",
+    "answer_4": "Where does he cook dinner?",
+    "right_answer": "When does he cook dinner?"
+  },
+  {
+    "title": "They are watching a movie right now. //(Make a question)",
+    "answer_1": "Why are they watching a movie?",
+    "answer_2": "What are they watching right now?",
+    "answer_3": "When are they watching a movie?",
+    "answer_4": "Where are they watching a movie?",
+    "right_answer": "What are they watching right now?"
+  },
+  {
+    "title": "She doesn't speak German. //(Make a question)",
+    "answer_1": "Why doesn't she speak German?",
+    "answer_2": "What does she speak in German?",
+    "answer_3": "When does she speak German?",
+    "answer_4": "Where does she speak German?",
+    "right_answer": "Why doesn't she speak German?"
+  },
+  {
+    "title": "They live in London. //(Make a question)",
+    "answer_1": "What do they live in?",
+    "answer_2": "Where do they live?",
+    "answer_3": "Why do they live in London?",
+    "answer_4": "When do they live in London?",
+    "right_answer": "Where do they live?"
+  },
+  {
+    "title": "He is playing the guitar now. //(Make a question)",
+    "answer_1": "What is he playing now?",
+    "answer_2": "Why is he playing the guitar?",
+    "answer_3": "When is he playing the guitar?",
+    "answer_4": "Where is he playing the guitar?",
+    "right_answer": "What is he playing now?"
+  }
+]
