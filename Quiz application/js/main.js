@@ -1,14 +1,21 @@
 // select the selection buttons
-// let selectionButtonsContainer = document.querySelector(".selection-buttons");
-// let englishSimplePresent = document.getElementById("simplePresent");
-// let englishPresentContinuous = document.getElementById("presentContinuous");
+let selectionLinksContainer = document.querySelector(
+  ".quiz-app .selection-links"
+);
+let selectionLinks = document.querySelector(
+  ".quiz-app .selection-links .select-test"
+);
+let selectionList = document.querySelectorAll(
+  ".quiz-app .selection-links .select-test li"
+);
+let englishSimplePresent = document.getElementById("simplePresent");
+let englishPresentContinuous = document.getElementById("presentContinuous");
+// console.log(selectionList.data.json);
 
-// englishSimplePresent.onclick = function () {
-//   selectionButtonsContainer.style.display = "none";
-
-// };
 // select the elements
 let countSpan = document.querySelector(".quiz-app .quiz-info .count span");
+let category = document.querySelector(".quiz-app .quiz-info .category span");
+
 let bulletSpanContainer = document.querySelector(".quiz-app .bullets .spans");
 let bullets = document.querySelector(".bullets");
 let quizArea = document.querySelector(".quiz-app .quiz-area");
@@ -18,8 +25,7 @@ let resuletsContainer = document.querySelector(".quiz-app .results");
 let countdownElement = document.querySelector(".quiz-app .bullets .countdown");
 
 // set options
-let simplePresent = "simplePresent.json";
-let presentContinuous = "presentContinuous.json";
+let tests = ["simplePresent.json", "presentContinuous.json"];
 let currentIndex = 0;
 let rightAnswers = 0;
 let countDownInterval;
@@ -71,9 +77,17 @@ function getQuestions() {
       };
     }
   };
-  myRequest.open("Get", presentContinuous, true);
-  myRequest.send();
+  selectionList.forEach((li) => {
+    li.onclick = function () {
+      myRequest.open("Get", li.dataset.json, true);
+      myRequest.send();
+      selectionLinksContainer.style.display = "none";
+      submitButton.style.display = "block";
+      category.innerHTML = li.dataset.category;
+    };
+  });
 }
+
 getQuestions();
 
 function createBullets(numberOfQuestion) {

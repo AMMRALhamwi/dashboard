@@ -10,17 +10,37 @@
     <div class="page container">
       <div class="quiz-app">
         <div class="quiz-info">
-          <div class="category">Category: <span>Simple Present </span></div>
+          <div class="category">
+            Category: <span>Choose a test to start</span>
+          </div>
           <div class="count">Question count: <span></span></div>
         </div>
-        <div class="selection-buttons">
+        <div class="selection-links">
           <h2>Select a test to start</h2>
           <ul class="select-test">
-            <li><a href="">English Simple Present</a></li>
-            <li><a href="">English Present Continuous</a></li>
+            <li
+              data-category="Simple Present"
+              data-json="simplePresent.json"
+              id="simplePresent"
+            >
+              English Simple Present
+            </li>
+            <li
+              data-category="Present Continuous"
+              data-json="presentContinuous.json"
+              id="presentContinuous"
+            >
+              English Present Continuous
+            </li>
+            <li
+              data-category="yes No questions"
+              data-json="yesNoquestions.json"
+              id="yesNoquestions"
+            >
+              Yes No questions
+            </li>
           </ul>
         </div>
-
         <div class="quiz-area"></div>
         <div class="answers-area"></div>
         <button class="submit-button">Check Answer</button>

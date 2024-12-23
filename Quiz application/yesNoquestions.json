@@ -1,0 +1,82 @@
+[
+  {
+    "title": " She reads books every day. //(Make a question)",
+    "answer_1": "Does she read books every day?",
+    "answer_2": "Does she reads books every day?",
+    "answer_3": "Is she reading books every day?",
+    "answer_4": "Is she reads books every day?",
+    "right_answer": "Does she read books every day?"
+  },
+  {
+    "title": "They are playing football now. //(Make a question)",
+    "answer_1": "Are they playing football now?",
+    "answer_2": "Are they play football now?",
+    "answer_3": "Do they playing football now?",
+    "answer_4": "Do they play football now?",
+    "right_answer": "Are they playing football now?"
+  },
+  {
+    "title": "He doesn't eat meat. //(Make a question)",
+    "answer_1": "Does he eat meat?",
+    "answer_2": "Doesn't he eat meat?",
+    "answer_3": "Is he eat meat?",
+    "answer_4": "Is he eats meat?",
+    "right_answer": "Does he eat meat?"
+  },
+  {
+    "title": "They work in the office. //(Make a question)",
+    "answer_1": "Do they work in the office?",
+    "answer_2": "Are they work in the office?",
+    "answer_3": "Do they works in the office?",
+    "answer_4": "Are they working in the office?",
+    "right_answer": "Do they work in the office?"
+  },
+  {
+    "title": "She is studying for her exam. //(Make a question)",
+    "answer_1": "Is she study for her exam?",
+    "answer_2": "Is she studies for her exam?",
+    "answer_3": "Does she studying for her exam?",
+    "answer_4": "Is she studying for her exam?",
+    "right_answer": "Is she studying for her exam?"
+  },
+  {
+    "title": "He cooks dinner on Sundays. //(Make a question)",
+    "answer_1": "Does he cook dinner on Sundays?",
+    "answer_2": "Doesn't he cook dinner on Sundays?",
+    "answer_3": "Is he cooking dinner on Sundays?",
+    "answer_4": "Is he cook dinner on Sundays?",
+    "right_answer": "Does he cook dinner on Sundays?"
+  },
+  {
+    "title": "They are watching a movie right now. //(Make a question)",
+    "answer_1": "Are they watch a movie right now?",
+    "answer_2": "Are they watching a movie right now?",
+    "answer_3": "Do they watch a movie right now?",
+    "answer_4": "Do they watching a movie right now?",
+    "right_answer": "Are they watching a movie right now?"
+  },
+  {
+    "title": "She doesn't speak German. //(Make a question)",
+    "answer_1": "Does she speak German?",
+    "answer_2": "Doesn't she speak German?",
+    "answer_3": "Is she speak German?",
+    "answer_4": "Is she speaks German?",
+    "right_answer": "Does she speak German?"
+  },
+  {
+    "title": "They live in London. //(Make a question)",
+    "answer_1": "Do they live in London?",
+    "answer_2": "Are they live in London?",
+    "answer_3": "Do they lives in London?",
+    "answer_4": "Are they living in London?",
+    "right_answer": "Do they live in London?"
+  },
+  {
+    "title": "He is playing the guitar now. //(Make a question)",
+    "answer_1": "Is he playing the guitar now?",
+    "answer_2": "Is he play the guitar now?",
+    "answer_3": "Does he playing the guitar now?",
+    "answer_4": "Does he play the guitar now?",
+    "right_answer": "Is he playing the guitar now?"
+  }
+]
