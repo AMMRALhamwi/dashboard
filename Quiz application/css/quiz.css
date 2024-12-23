@@ -108,7 +108,7 @@ body {
 .quiz-app .selection-links .select::after {
   content: "";
   position: absolute;
-  width: 70px;
+  width: 87px;
   height: 3px;
   background-color: #026dbb;
   top: 50%;
