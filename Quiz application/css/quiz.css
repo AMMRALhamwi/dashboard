@@ -1,16 +1,51 @@
 * {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
-  font-family: Tahoma, Arial;
-  margin: 0;
-  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  /* background-color: black; */
 }
-
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 97px;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 .page {
   background-image: url(../images/background-pattern.jpg);
   background-size: cover;
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 .page::before {
   content: "";
@@ -24,16 +59,14 @@ body {
 }
 .quiz-app {
   position: relative;
-  margin: 0;
-  width: 800px;
+  margin: auto;
+  /* width: 800px; */
   padding: 20px;
-  min-height: 100vh;
 }
 @media (max-width: 768px) {
   .quiz-app {
-    width: 400px;
-    /* margin: 0px; */
-    height: 100vb;
+    /* width: 400px; */
+    margin: auto;
   }
 }
 
@@ -55,6 +88,9 @@ body {
   text-align: center;
   text-transform: capitalize;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 .quiz-app .selection-links h2 {
   background-color: #fff;
@@ -103,12 +139,14 @@ body {
 .quiz-app .selection-links .select {
   position: relative;
   bottom: -60px;
+  margin: auto;
+  width: fit-content;
 }
 .quiz-app .selection-links .select::before,
 .quiz-app .selection-links .select::after {
   content: "";
   position: absolute;
-  width: 87px;
+  width: 70px;
   height: 3px;
   background-color: #026dbb;
   top: 50%;
@@ -118,6 +156,10 @@ body {
 }
 .quiz-app .selection-links .select::after {
   right: -62px;
+}
+.quiz-app .selection-links img {
+  display: block;
+  margin: auto;
 }
 .quiz-app .quiz-area {
   background-color: #fff;
@@ -237,4 +279,25 @@ body {
 }
 .quiz-app .results span.perfect {
   color: #0075ff;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .quiz-app {
+    padding: 10px;
+  }
+
+  .page::before {
+    background-color: #20a3fb;
+  }
+
+  .selection-links {
+    text-align: center;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
 }
