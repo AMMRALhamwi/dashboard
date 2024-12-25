@@ -213,13 +213,38 @@ function showresults(questionsCount) {
     submitButton.remove();
     bullets.remove();
     if (rightAnswers > questionsCount / 2 && rightAnswers < questionsCount) {
-      resulets = `<span class="good" >Good job</span>, ${rightAnswers} out of ${questionsCount} `;
+      let great = document.createElement("h2");
+      let greatText = document.createTextNode("Good Job");
+      great.className = "great";
+      great.appendChild(greatText);
+      let span = document.createElement("span");
+      span.className = "bad";
+      span.innerHTML = `<span class="good" >Good job</span>, ${rightAnswers} out of ${questionsCount}`;
+      resuletsContainer.appendChild(great);
+      resuletsContainer.appendChild(span);
     } else if (rightAnswers == questionsCount) {
-      resulets = ` <span class="perfect" >Great job</span> , You answered all questions correctly`;
+      let great = document.createElement("h2");
+      let greatText = document.createTextNode("Grat");
+      great.className = "great";
+      great.appendChild(greatText);
+      let span = document.createElement("span");
+      span.className = "bad";
+      span.innerHTML = ` <span class="perfect" >Great job</span> , You answered all questions correctly`;
+      resuletsContainer.appendChild(great);
+      resuletsContainer.appendChild(span);
+      resulets = ``;
     } else {
-      resulets = ` <span class="bad" >Are you okey ? Have a cup of coffee then try again</span>, right answers are ${rightAnswers} out of ${questionsCount}`;
+      let great = document.createElement("h2");
+      let greatText = document.createTextNode("It's Okay");
+      great.className = "great";
+      great.appendChild(greatText);
+      let span = document.createElement("span");
+      span.className = "bad";
+      span.innerHTML = `Are you okey ? Have a cup of coffee then try again</span>, right answers are ${rightAnswers} out of ${questionsCount}`;
+      resuletsContainer.appendChild(great);
+      resuletsContainer.appendChild(span);
     }
-    resuletsContainer.innerHTML = resulets;
+    // resuletsContainer.innerHTML = resulets;
   }
 }
 
