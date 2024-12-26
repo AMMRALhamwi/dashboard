@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Tahoma, sans-serif;
+}
+.info-container {
+  width: 1080px;
+  margin: 20px auto 0;
+  background-color: #f6f6f6;
+  padding: 20px;
+  font-size: 24px;
+  overflow: hidden;
+  border: 2px solid #2196f3;
+  display: flex;
+  justify-content: space-between;
+}
+.memory-game-blockes {
+  display: flex;
+  width: 1100px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.memory-game-blockes img {
+  width: 150px;
+}
+.memory-game-blockes .game-block {
+  height: 200px;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  flex: 1 0 200px;
+  margin: 0 10px 20px;
+}
