@@ -26,6 +26,7 @@ let answersArea = document.querySelector(".quiz-app .answers-area");
 let submitButton = document.querySelector(".quiz-app .submit-button");
 let resuletsContainer = document.querySelector(".quiz-app .results");
 let countdownElement = document.querySelector(".quiz-app .bullets .countdown");
+let brain = document.querySelector(".quiz-app .results .brain");
 
 // set options
 let tests = ["simplePresent.json", "presentContinuous.json"];
@@ -212,6 +213,7 @@ function showresults(questionsCount) {
     answersArea.remove();
     submitButton.remove();
     bullets.remove();
+    brain.style.display = "flex";
     if (rightAnswers > questionsCount / 2 && rightAnswers < questionsCount) {
       let great = document.createElement("h2");
       let greatText = document.createTextNode("Good Job");
@@ -244,7 +246,6 @@ function showresults(questionsCount) {
       resuletsContainer.appendChild(great);
       resuletsContainer.appendChild(span);
     }
-    // resuletsContainer.innerHTML = resulets;
   }
 }
 

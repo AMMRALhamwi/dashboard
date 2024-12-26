@@ -572,6 +572,46 @@ ul {
   font-size: 16px;
 }
 /* end yearly targets */
+/* start quiz app */
+.quiz {
+  text-align: center;
+  background-color: #54d7f9;
+  color: #fff;
+}
+.quiz h3 {
+  font-size: 28px;
+}
+.quiz p {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.quiz .image {
+  overflow: hidden;
+}
+.quiz .image img {
+  width: 200px;
+  margin: -10px auto;
+}
+.quiz .text p {
+  margin: 5px;
+  line-height: 1.8;
+  padding: 0 20px;
+}
+.quiz .enter-quiz {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 15px;
+}
+.quiz .enter-quiz a {
+  color: #2693e4;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* end quiz app */
 /* welcome popup */
 .hangman {
   position: relative;

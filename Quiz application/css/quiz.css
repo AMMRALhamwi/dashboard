@@ -273,11 +273,7 @@ ul {
   margin-bottom: 20px;
   display: none;
 }
-/* @media (max-width: 768px) {
-  .quiz-app .submit-button {
-    margin-bottom: 20px;
-  }
-} */
+
 .quiz-app .submit-button:focus {
   outline: none;
 }
@@ -343,12 +339,17 @@ ul {
   width: fit-content;
   display: block;
   padding: 20px 50px;
-  margin: 100px 30px;
+  margin: auto;
   border-radius: 7px;
   text-align: center;
   line-height: 1.8;
   text-transform: capitalize;
-  transform: rotate(-5deg);
+}
+.quiz-app .results .brain {
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  display: none;
 }
 .quiz-app .results span.good {
   color: #009688;
