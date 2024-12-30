@@ -3,6 +3,7 @@ let startGame = document.querySelector(".control-buttons span");
 let playerName = document.querySelector(".name span");
 let controlButtons = document.querySelector(".control-buttons");
 let BlocksContainer = document.querySelector(".memory-game-blockes");
+let Blocks = document.querySelectorAll(".memory-game-blockes .game-block");
 let triesElement = document.querySelector(".tries span");
 
 startGame.onclick = function () {
@@ -13,7 +14,16 @@ startGame.onclick = function () {
     playerName.innerHTML = yourName;
   }
   controlButtons.remove();
+  blocks.forEach((block) => {
+    block.classList.add("is-flipped");
+
+    setTimeout(function () {
+      block.classList.remove("is-flipped");
+    }, 1500);
+  });
 };
+// flipping all blocks to start
+
 // main variables
 let durantion = 1000;
 let blocks = Array.from(BlocksContainer.children);
@@ -92,5 +102,5 @@ function stopClicking() {
   setTimeout(() => {
     // remove the class no clicking after the duration
     BlocksContainer.classList.remove("no-clicking");
-  }, 1500);
+  }, durantion);
 }

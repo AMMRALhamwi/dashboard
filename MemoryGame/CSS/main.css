@@ -36,26 +36,45 @@ body {
 }
 .info-container {
   width: 1080px;
-  margin: 20px auto 0;
+  margin: 0 auto;
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 5px 20px;
   font-size: 24px;
   overflow: hidden;
   border: 2px solid #2196f3;
   display: flex;
   justify-content: space-between;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .info-container {
+    width: 360px;
+    padding: 2px 7px;
+    font-size: 14px;
+    border: 1px solid #2196f3;
+  }
 }
 .memory-game-blockes {
   display: flex;
   width: 1100px;
   flex-wrap: wrap;
-  margin: 20px auto;
+  margin: 10px auto;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .memory-game-blockes {
+    width: 360px;
+    margin: 5px auto;
+  }
 }
 .memory-game-blockes.no-clicking {
   pointer-events: none;
 }
 .memory-game-blockes .game-block {
-  height: 200px;
+  height: 150px;
   transition: transform 0.5s;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
@@ -64,19 +83,32 @@ body {
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-  flex: 1 0 200px;
-  margin: 0 10px 20px;
+  flex: 1 0 150px;
+  margin: 0 5px 10px;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .memory-game-blockes .game-block {
+    height: 75px;
+    flex: 1 0 75px;
+  }
 }
 .memory-game-blockes .game-block .front {
   background-color: #333;
-  line-height: 200px;
+  /* line-height: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .memory-game-blockes .game-block .front::before {
   content: "?";
-  /* position: absolute; */
   color: #fff;
-  font-size: 140px;
+  font-size: 100px;
   font-weight: bold;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .memory-game-blockes .game-block .front::before {
+    font-size: 50px;
+  }
 }
 .memory-game-blockes .game-block .back {
   background-color: #607d8b;
@@ -85,11 +117,18 @@ body {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .memory-game-blockes .game-block .back img {
-  width: 140px;
-  height: 140px;
-  margin-top: 30px;
+  width: 100px;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .memory-game-blockes .game-block .back img {
+    width: 50px;
+  }
 }
 
 .memory-game-blockes .game-block .face {
@@ -99,7 +138,8 @@ body {
   position: absolute;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  border: solid 5px #2196f3;
+  /* border: solid 5px #2196f3; */
+  border-radius: 8px;
 }
 .memory-game-blockes .game-block.is-flipped,
 .memory-game-blockes .game-block.has-match {
