@@ -62,12 +62,14 @@ body {
   display: flex;
   width: 1100px;
   flex-wrap: wrap;
-  margin: 10px auto;
+  margin: auto;
+  margin-top: 25px;
 }
 @media (min-width: 375px) and (max-width: 768px) {
   .memory-game-blockes {
     width: 360px;
-    margin: 5px auto;
+    margin: auto;
+    margin-top: 25px;
   }
 }
 .memory-game-blockes.no-clicking {

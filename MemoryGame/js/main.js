@@ -48,14 +48,14 @@ function checkMatchedBlocks(firstBlock, secondBlock) {
     firstBlock.classList.add("has-match");
     secondBlock.classList.add("has-match");
 
-    document.getElementById("succes").onplay;
+    document.getElementById("succes").play();
   } else {
     triesElement.innerHTML = parseInt(triesElement.innerHTML) + 1;
     setTimeout(() => {
       firstBlock.classList.remove("is-flipped");
       secondBlock.classList.remove("is-flipped");
     }, durantion);
-    document.getElementById("fail").onplay;
+    document.getElementById("fail").play();
   }
 }
 
