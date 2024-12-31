@@ -1,11 +1,67 @@
 // sellect html elements
+let page = document.querySelector(".page");
 let startGame = document.querySelector(".control-buttons span");
 let playerName = document.querySelector(".name span");
 let controlButtons = document.querySelector(".control-buttons");
 let BlocksContainer = document.querySelector(".memory-game-blockes");
 let Blocks = document.querySelectorAll(".memory-game-blockes .game-block");
 let triesElement = document.querySelector(".tries span");
+let displayMode = document.querySelector(".display-mode");
+let musicButton = document.querySelector(".music");
+let musicSpan = document.querySelector(".music span");
+let soundsEffectsButton = document.querySelector(".sounds-effects ");
+let soundsEffectsSpan = document.querySelector(".sounds-effects span");
+let music = document.querySelector("#onPlay");
+// variables for quick settings
+let displayModeClicked = 0;
+let soundsEffectsClicked = 0;
+let soundEffectsStats = true;
+let musicbuttonClicks = 0;
+let musicStatus = true;
+// display modes
 
+displayMode.onclick = function () {
+  displayModeClicked++;
+
+  if (displayModeClicked % 2 !== 0) {
+    page.style.backgroundColor = "black";
+    document.querySelector(".display-mode span").innerHTML = "Light";
+  } else {
+    page.style.backgroundColor = "#fff";
+    document.querySelector(".display-mode span").innerHTML = "Dark";
+  }
+};
+// music mode
+// if (musicStatus == true) {
+//   music.play();
+// }
+// Start music when the game starts (assuming this code runs after game initialization):
+music.play();
+
+musicButton.onclick = function () {
+  musicbuttonClicks++;
+  if (musicStatus) {
+    music.pause();
+    musicSpan.innerHTML = "Off";
+    musicStatus = false;
+  } else {
+    music.play();
+    musicSpan.innerHTML = "On";
+    musicStatus = true;
+  }
+};
+
+// sound effects modes
+soundsEffectsButton.onclick = function () {
+  soundsEffectsClicked++;
+  if (soundsEffectsClicked % 2 !== 0) {
+    soundsEffectsSpan.innerHTML = "Off";
+    soundEffectsStats = false;
+  } else {
+    soundsEffectsSpan.innerHTML = "On";
+    soundEffectsStats = true;
+  }
+};
 startGame.onclick = function () {
   let yourName = prompt("What's your name ?");
   if (yourName == null || yourName == "") {
@@ -47,15 +103,18 @@ function checkMatchedBlocks(firstBlock, secondBlock) {
 
     firstBlock.classList.add("has-match");
     secondBlock.classList.add("has-match");
-
-    document.getElementById("succes").play();
+    if (soundEffectsStats == true) {
+      document.getElementById("succes").play();
+    }
   } else {
     triesElement.innerHTML = parseInt(triesElement.innerHTML) + 1;
     setTimeout(() => {
       firstBlock.classList.remove("is-flipped");
       secondBlock.classList.remove("is-flipped");
     }, durantion);
-    document.getElementById("fail").play();
+    if (soundEffectsStats == true) {
+      document.getElementById("fail").play();
+    }
   }
 }
 
@@ -104,3 +163,7 @@ function stopClicking() {
     BlocksContainer.classList.remove("no-clicking");
   }, durantion);
 }
+
+// the end of the countDown
+let countDownDate = new Date().getTime();
+console.log(countDownDate);

@@ -3,6 +3,12 @@
 }
 body {
   font-family: Arial, Tahoma, sans-serif;
+  margin: 0;
+}
+.page {
+  background-color: #fff;
+  padding: 8px;
+  height: 100vh;
 }
 .control-buttons {
   position: fixed;
@@ -57,6 +63,19 @@ body {
     font-size: 14px;
     border: 1px solid #2196f3;
   }
+}
+.quick-settings {
+  color: wheat;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  background: #333;
+  padding: 10px 15px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 .memory-game-blockes {
   display: flex;
