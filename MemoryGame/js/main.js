@@ -32,10 +32,7 @@ displayMode.onclick = function () {
   }
 };
 // music mode
-// if (musicStatus == true) {
-//   music.play();
-// }
-// Start music when the game starts (assuming this code runs after game initialization):
+
 music.play();
 
 musicButton.onclick = function () {
@@ -165,5 +162,93 @@ function stopClicking() {
 }
 
 // the end of the countDown
-let countDownDate = new Date().getTime();
-console.log(countDownDate);
+let timerContainer = document.querySelector(".timer-container");
+let minutesSpan = document.querySelector(".timer-container .minutes");
+let secondsSpan = document.querySelector(".timer-container .seconds");
+let countDownInterval;
+// clearInterval();
+function countDown(duration) {
+  let countDownInterval; // Declare interval inside the function's scope
+
+  countDownInterval = setInterval(function () {
+    let minutes, seconds;
+    duration--;
+
+    if (duration < 0) {
+      clearInterval(countDownInterval); // Stop the timer when duration is 0 or less
+      timerContainer.innerHTML = "Time's up!"; // Or any other message you want
+      endGame();
+      return; // Exit the function
+    }
+
+    minutes = Math.floor(duration / 60);
+    seconds = Math.floor(duration % 60);
+
+    minutes = minutes < 10 ? "0" + minutes : minutes; // Use "+" to concatenate strings
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    timerContainer.innerHTML = minutes + ":" + seconds; //Use "+" for concatenation
+  }, 1000);
+}
+
+countDown(150); // Start the countdown
+
+// End game
+function endGame() {
+  BlocksContainer.classList.add("no-clicking");
+
+  // if all the game blockes has a class has match you win
+  checkClassName(blocks, "has-match");
+}
+
+function checkClassName(elements, className) {
+  let all = 0;
+
+  for (i = 0; i < elements.length; i++) {
+    // console.log(elements[i]);
+    if (elements[i].classList.contains(className)) {
+      console.log("has match");
+      all++;
+    } else {
+      console.log("no");
+    }
+  }
+  if (all === elements.length) {
+    console("you nailed it");
+    let overLay = document.createElement("div");
+    overLay.className = "over-lay";
+    let endGame = document.createElement("div");
+    endGame.className = "end-game";
+    let span = document.createElement("span");
+    span.innerHTML = "You Won";
+    let playAgain = document.createElement("button");
+    playAgain.innerHTML = "Play Again";
+    playAgain.className = "play-again";
+
+    endGame.appendChild(span);
+    endGame.appendChild(playAgain);
+    overLay.appendChild(endGame);
+    page.appendChild(overLay);
+    playAgain.addEventListener("click", () => {
+      location.reload();
+    });
+  } else if (all !== elements.length) {
+    console.log(all);
+    let overLay = document.createElement("div");
+    overLay.className = "over-lay";
+    let endGame = document.createElement("div");
+    endGame.className = "end-game";
+    let span = document.createElement("span");
+    span.innerHTML = "You lost";
+    let playAgain = document.createElement("button");
+    playAgain.innerHTML = "Play Again";
+    playAgain.className = "play-again";
+    endGame.appendChild(span);
+    endGame.appendChild(playAgain);
+    overLay.appendChild(endGame);
+    page.appendChild(overLay);
+    playAgain.addEventListener("click", () => {
+      location.reload();
+    });
+  }
+}
