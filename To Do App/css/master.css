@@ -251,10 +251,26 @@ li {
 .music .sounds-container .box {
   background-color: #333;
   padding: 20px;
+  text-align: center;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+}
+.music .sounds-container .box:hover {
+  color: #03a9f4;
+  border-left: 15px solid #333;
+  border-right: 15px solid #333;
+}
+.music .sounds-container .box i {
+  font-size: 32px;
 }
 .music .sounds-container .box .titles {
   display: block;
+  margin-top: 15px;
+  font-size: 12px;
 }
 .timer-area {
   margin: 15px;
