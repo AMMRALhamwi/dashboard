@@ -6,9 +6,7 @@ let form = document.querySelector(".page  .form");
 let inputText = document.querySelector(".page  .form .input-text");
 let newTaskSubmitButton = document.querySelector(".page  .form .new-task");
 let tasksDiv = document.querySelector(".page  .tasks");
-// let taskText = document.querySelector(".page .tasks .task .text");
-// let taskDelete = document.querySelector(".page .tasks .task .buttons .remove");
-// console.log(taskText);
+let runningTask = document.querySelector(".timer-area .running-task");
 
 // empty array to store tasks
 let arrayOfTasks = [];
@@ -128,16 +126,15 @@ function addElementsToPageFrom(arrayOfTasks) {
     taskContainer.appendChild(text);
     taskContainer.appendChild(options);
 
-    // console.log(taskContainer);
     // // creating the delete icon
-
-    // taskContainer.appendChild(remove);
 
     // add task div to dom
     tasksDiv.appendChild(taskContainer);
+    // add task div to front page
+    runningTask.innerHTML = arrayOfTasks[arrayOfTasks.length - 1].title;
   });
 }
-
+console.log(arrayOfTasks[0].title);
 function addDataToLocalStorage(arraryOfTasks) {
   window.localStorage.setItem("tasks", JSON.stringify(arraryOfTasks));
 }
