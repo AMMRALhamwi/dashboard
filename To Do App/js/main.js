@@ -144,7 +144,6 @@ function addElementsToPageFrom(arrayOfTasks) {
     runningTask.innerHTML = arrayOfTasks[arrayOfTasks.length - 1].title;
   });
 }
-console.log(arrayOfTasks[0].title);
 function addDataToLocalStorage(arraryOfTasks) {
   window.localStorage.setItem("tasks", JSON.stringify(arraryOfTasks));
 }
