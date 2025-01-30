@@ -29,10 +29,12 @@ li {
   display: flex;
   /* grid-template-columns: repeat(auto-fill, minmax(650px, 1fr)); */
   position: relative;
+  overflow: hidden;
 }
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   .page {
-    display: block;
+    /* display: block; */
+    flex-direction: column-reverse;
   }
 }
 /* .page::before {
@@ -46,7 +48,7 @@ li {
 } */
 .tasks-area {
   flex: 1;
-  min-width: 650px;
+  width: 650px;
   position: relative;
   margin: 15px;
   margin-right: 0;
@@ -61,7 +63,8 @@ li {
     margin: auto;
     padding-top: 10px;
     max-width: 640px;
-    display: none;
+    /* display: none; */
+    width: 100%;
   }
 }
 
@@ -71,12 +74,16 @@ li {
   justify-content: space-between;
   gap: 20px;
 }
+@media (max-width: 740px) {
+  .boxes-container {
+    flex-direction: column;
+  }
+}
 .tasks {
   background-color: #262828;
   /* height: 77vh; */
   padding: 15px;
-  min-width: 350px;
-
+  width: 350px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -88,7 +95,11 @@ li {
   -o-transition: 0.3s;
   position: relative;
 }
-
+@media (max-width: 740px) {
+  .tasks {
+    width: 100%;
+  }
+}
 .tasks .task {
   background: #333;
   padding: 10px 15px;
@@ -157,11 +168,16 @@ li {
   background-color: #262828;
   /* height: 77vh; */
   padding: 15px;
-  min-width: 400px;
+  /* min-width: 400px; */
   display: flex;
   flex-direction: column;
   gap: 8px;
   border-radius: 8px;
+}
+@media (max-width: 740px) {
+  .boxes-container .focus-report {
+    width: 100%;
+  }
 }
 .boxes-container .focus-report .box {
   font-size: 14px;
@@ -193,6 +209,11 @@ li {
   position: relative;
   padding: 15px;
 }
+@media (max-width: 640px) {
+  .music {
+    width: 100%;
+  }
+}
 .music .heading {
   text-align: center;
 }
@@ -212,10 +233,22 @@ li {
   -o-border-radius: 8px;
   cursor: pointer;
 }
+
 .music .sounds-container .box:hover {
   color: #03a9f4;
-  border-left: 15px solid #333;
-  border-right: 15px solid #333;
+  /* border-left: 15px solid #333;
+  border-right: 15px solid #333; */
+}
+@media (max-width: 640px) {
+  .music .sounds-container .box {
+    padding: 0px;
+    background-color: transparent;
+  }
+  .music .sounds-container .box:hover {
+    color: #03a9f4;
+    /* border-left: 5px solid #333;
+    border-right: 5px solid #333; */
+  }
 }
 .music .sounds-container .box i {
   font-size: 32px;
@@ -252,31 +285,31 @@ li {
   }
 }
 .timer-area .nav {
-  /* background-color: #333; */
   padding: 10px;
   width: 100%;
-  /* position: absolute; */
   top: 0;
-  /* z-index: 4; */
   display: flex;
   gap: 15px;
   justify-content: space-between;
 }
-/* .timer-area .nav:hover {
-  position: absolute;
-} */
+
 .timer-area .nav:hover i {
   color: #f44336;
 }
 .timer-area .nav i {
   text-align: right;
-  /* width: 100%; */
   font-size: 26px;
   color: #fff;
   padding-right: 10px;
   padding-top: 10px;
+  cursor: pointer;
 }
-.timer-area .nav i:hover + ul {
+
+.timer-area .nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 15px;
   display: flex;
   position: absolute;
   width: 100%;
@@ -284,24 +317,19 @@ li {
   background-color: #333;
   left: 0;
   top: 47px;
-}
-.timer-area .nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  margin-top: 15px;
   display: none;
 }
+
 .timer-area .nav ul li {
   padding: 15px;
   border-bottom: 1px solid #555;
+  color: #fff;
+  cursor: pointer;
 }
-.timer-area .nav ul li:hover a {
+.timer-area .nav ul li:hover {
   color: #f44336;
 }
-.timer-area .nav ul li a {
-  color: #fff;
-}
+
 .form {
   border-radius: 8px;
   display: flex;

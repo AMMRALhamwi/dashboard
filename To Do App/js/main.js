@@ -6,8 +6,17 @@ let form = document.querySelector(".page  .form");
 let inputText = document.querySelector(".page  .form .input-text");
 let newTaskSubmitButton = document.querySelector(".page  .form .new-task");
 let tasksDiv = document.querySelector(".page  .tasks");
-let runningTask = document.querySelector(".timer-area .running-task");
+let tasksArea = document.querySelector(".page .tasks-area");
+let focusReport = document.querySelector(".page .tasks-area .focus-report");
+let music = document.querySelector(".page .tasks-area .music");
 
+let runningTask = document.querySelector(".timer-area .running-task");
+let ulLinks = document.querySelector(".timer-area .nav .links");
+let liLinks = document.querySelector(".timer-area .nav .links li");
+let allTasksLink = document.querySelector(".timer-area .nav .links .all-tasks");
+let menu = document.querySelector(".nav  i");
+let mobileTasks = document.querySelector(".mobile-tasks");
+console.log(music);
 // empty array to store tasks
 let arrayOfTasks = [];
 
@@ -130,6 +139,7 @@ function addElementsToPageFrom(arrayOfTasks) {
 
     // add task div to dom
     tasksDiv.appendChild(taskContainer);
+    // mobileTasks.appendChild(taskContainer);
     // add task div to front page
     runningTask.innerHTML = arrayOfTasks[arrayOfTasks.length - 1].title;
   });
@@ -364,4 +374,17 @@ function motivateMe() {
   requestMotivation.send();
 }
 
-// Call the motivateMe function to fetch and display a random quote
+// show the menu on clicking
+menu.onclick = function () {
+  if (ulLinks.style.display === "flex") {
+    ulLinks.style.display = "none"; // Hide the links if they are currently displayed
+  } else {
+    ulLinks.style.display = "flex"; // Display the links if they are currently hidden
+  }
+};
+// allTasksLink.onclick = function () {
+//   ulLinks.style.display = "none";
+//   tasksArea.style.display = "flex";
+//   focusReport.style.display = "none";
+//   music.style.display = "none";
+// };
